@@ -23,5 +23,16 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/order': ['error', { 'newlines-between': 'always' }],
     'react/jsx-props-no-spreading': 'off',
+    'no-console': ['error', { allow: ['tron'] }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+  },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
   },
 }
