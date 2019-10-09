@@ -27,6 +27,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'class-methods-use-this': 'off',
   },
   settings: {
     'import/resolver': {

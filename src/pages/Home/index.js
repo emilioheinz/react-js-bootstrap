@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { exampleRequest } from '~/redux/modules/example/actions'
+import { ExampleApiService } from '~/services'
 // import { Container } from './styles';
 
 export default function Home() {
   const dispatch = useDispatch()
+  const [example, setExample] = useState([])
+
+  useEffect(() => {
+    async function getExample() {
+      const response = await ExampleApiService.getAll()
+
+      setExample(response)
+    }
+
+    getExample()
+  }, [])
+
+  useEffect(() => {
+    console.log(example)
+  }, [example])
 
   function buttonPressed() {
     const requestParams = {

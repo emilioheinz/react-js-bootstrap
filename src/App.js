@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import '~/config/ReactotronConfig'
 
 import GlobalStyles from './styles/global'
-import history from './services/history'
+import { history } from './services'
 import store from './redux'
 import Routes from './routes'
 
