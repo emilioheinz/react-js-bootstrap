@@ -3,8 +3,7 @@ import { Switch } from 'react-router-dom'
 
 import Route from './Route'
 
-import Home from '~/pages/Home'
-import Profile from '~/pages/Profile'
+import { Home, Profile } from '~/pages'
 
 export default function Routes() {
   return (

@@ -1,6 +1,6 @@
 import api from '../api'
 
-class _ExampleApiService {
+class ExampleApiService {
   async getAll() {
     const examples = await api.get('/examples')
 
@@ -10,4 +10,4 @@ class _ExampleApiService {
   }
 }
 
-export const ExampleApiService = new _ExampleApiService()
+export default new ExampleApiService()
