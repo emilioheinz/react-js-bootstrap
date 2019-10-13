@@ -5,9 +5,6 @@ import { exampleSuccess, exampleFailure } from './actions'
 export function* request({ payload }) {
   const { firstNumber, secondNumber } = payload
 
-  // We can api here with
-  // yiel call(api.get, '/url', { data })
-
   if (typeof firstNumber !== 'number' || typeof secondNumber !== 'number') {
     yield put(exampleFailure())
     return
