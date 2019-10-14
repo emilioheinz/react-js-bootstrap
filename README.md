@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :dart: react-js-bootstrap
+A simple clean and easy repository that bootstraps a project initialization for ReactJS with Styled Components, Redux,Navigation and Api connection all configured.
 
-## Available Scripts
+## :arrows_clockwise:	Folders organization
+The folders organization is really simple, if you want you can modify as your own project needs.
 
-In the project directory, you can run:
+### Assets
+- All he assests of your project, like images, svgs, gifs and whatever you want. If you want, you can split the assets in another sub directories like images, gifs etc.
 
-### `npm start`
+### Components
+- The components that are used in all the application, like buttons, modals, inputs etc you can put there. Usually I create a folder with the components name, for example, Button, and inside a `index.js` and a `styles.js`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Config
+- All the files that are about your porject configuration, in my case we have Reactotron lib already configured for example. usually this configs filles are about libs that you are using in your project.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Pages
+- Here you can follow the same exmple of the components folder, we are going to create a folder with the screens name, like, Home, inside this folder you can create a `index.js` and a `styles.js`. If you have any component that is used just in that screen, inside the screens folder you can create a `components` folder and folow the guide as the global components folder.
 
-### `npm test`
+### Store
+- Here we have the configuration and all things about or Redux store, but, if you are user Context API ou something else tocontrole the state of your application youn can put theses things inside there.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Routes
+- In this folder we have all the configs and code aboute the routes, here you can redirect the user to logged or not logged pages and outher things like that.
 
-### `npm run build`
+### Services
+- Here we mantain the services of our application, here we have the cor of the api connection, all the backend calls are made here by the services.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Styles
+- In this folder we mantain globalStyles, if you have a application with themes you can crete a file or folder themes right there and manage it like you want.
