@@ -27,3 +27,6 @@ A simple clean and easy repository that bootstraps a project initialization for 
 
 ### :nail_care: Styles
 - In this folder we mantain globalStyles, if you have a application with themes you can crete a file or folder fore these themes right there and manage it like you want with the styled-components.
+
+## :bomb: Mocked API
+- Thats a feature that was added to this bootstrap to make more easy the frontend development without any API working. If you are working in a team and the API endpoint that you need isn't already finished, yout can mock the API return inside `server.json` file and just run the command `json-server server server.json -p 3333` so you can call this mocked endpoint, and use the reall endpoint after. If you want to know more about json-server you can read the docs right here: https://github.com/typicode/json-server
