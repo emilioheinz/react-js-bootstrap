@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { exampleRequest } from '~/redux/modules/example/actions'
+import { exampleRequest } from '~/store/modules/example/actions'
 import { ExampleApiService } from '~/services'
 // import { Container } from './styles';
 

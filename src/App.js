@@ -6,7 +6,7 @@ import '~/config/ReactotronConfig'
 
 import GlobalStyles from './styles/global'
 import { history } from './services'
-import store from './redux'
+import store from './store'
 import Routes from './routes'
 
 function App() {
